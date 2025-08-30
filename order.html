@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nawabi - Order Your favuorite food</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./order.css">
+</head>
+
+<body>
+    <nav>
+        <h2 class="navbar-brand">Nawabi Cafe</h2>
+        <ul>
+            <li><a href="./index.html">Home </a></li>
+            <li><a href="./index.html#section2">Deals</a></li>
+            <li><a href="./index.html#section4">Pizza </a></li>
+            <li><a href="./other.html">Other Items</a></li>
+            <li><a href="./other.html#contact">Contact Us</a></li>
+        </ul>
+        <button id="orderNow">Order Now</button>
+    </nav>
+
+    <!-- 4 sections on index.html and 1 on other.html and this is 6th one -->
+    <div id="section6">
+        <div class="container6">
+            <h1>Order Your Food</h1>
+            <form action="" class="orderForm">
+                <div class="formLeft">
+                    <div class="selectDeal selectThing">
+                        <label for="Deal">Select your Deal</label>
+                        <div class="custom-dropdown" id="deal-dropdown">
+                            <div class="dropdown-header">None</div>
+                            <div class="dropdown-list" id="deals">
+                                <div class="dropdown-item" data-value="none">None</div>
+                                <div class="dropdown-item" data-value="deal1">Deal No 1</div>
+                                <div class="dropdown-item" data-value="deal2">Deal No 2</div>
+                                <div class="dropdown-item" data-value="deal3">Deal No 3</div>
+                                <div class="dropdown-item" data-value="deal4">Deal No 4</div>
+                                <div class="dropdown-item" data-value="deal5">Deal No 5</div>
+                                <div class="dropdown-item" data-value="deal6">Deal No 6</div>
+                                <div class="dropdown-item" data-value="deal7">Deal No 7</div>
+                                <div class="dropdown-item" data-value="deal8">Deal No 8</div>
+                                <div class="dropdown-item" data-value="deal9Reg">Deal No 9 (Regular)</div>
+                                <div class="dropdown-item" data-value="deal9Spe">Deal No 9 (Special)</div>
+                                <div class="dropdown-item" data-value="deal10">Deal No 10</div>
+                                <div class="dropdown-item" data-value="deal11Reg">Deal No 11 (Regular)</div>
+                                <div class="dropdown-item" data-value="deal11Spe">Deal No 11 (Special)</div>
+                                <div class="dropdown-item" data-value="deal12">Deal No 12</div>
+                                <div class="dropdown-item" data-value="deal13">Deal No 13</div>
+                                <div class="dropdown-item" data-value="deal14">Deal No 14</div>
+                            </div>
+                        </div>
+                        <select name="Deals" class="original-select">
+                            <option value="none">None</option>
+                            <option value="deal1">Deal No 1</option>
+                            <option value="deal2">Deal No 2</option>
+                            <option value="deal3">Deal No 3</option>
+                            <option value="deal4">Deal No 4</option>
+                            <option value="deal5">Deal No 5</option>
+                            <option value="deal6">Deal No 6</option>
+                            <option value="deal7">Deal No 7</option>
+                            <option value="deal8">Deal No 8</option>
+                            <option value="deal9Reg">Deal No 9 (Regular)</option>
+                            <option value="deal9Spe">Deal No 9 (Special)</option>
+                            <option value="deal10">Deal No 10</option>
+                            <option value="deal11Reg">Deal No 11 (Regular)</option>
+                            <option value="deal11Spe">Deal No 11 (Special)</option>
+                            <option value="deal12">Deal No 12</option>
+                            <option value="deal13">Deal No 13</option>
+                            <option value="deal14">Deal No 14</option>
+                        </select>
+                    </div>
+                    <div class="selectPizza selectThing">
+                        <label for="Pizza">Select your Pizza</label>
+                        <div class="custom-dropdown" id="pizza-dropdown">
+                            <div class="dropdown-header">None</div>
+                            <div class="dropdown-list" id="pizza">
+                                <div class="dropdown-item" data-value="none">None</div>
+                                <div class="dropdown-item" data-value="pizza1">Extreme Pan Peri Peri</div>
+                                <div class="dropdown-item" data-value="pizza2">Extreme Pan Malai</div>
+                                <div class="dropdown-item" data-value="pizza3">Extreme Pan Crispy Chicken</div>
+                                <div class="dropdown-item" data-value="pizza4">Spanish Pizza</div>
+                                <div class="dropdown-item" data-value="pizza5">Chicken Cheese Stuffed</div>
+                                <div class="dropdown-item" data-value="pizza6">Chicken Kabab Stuffed</div>
+                                <div class="dropdown-item" data-value="pizza7">Kababish Stuffed</div>
+                                <div class="dropdown-item" data-value="pizza8">Crown Crust Pizza</div>
+                                <div class="dropdown-item" data-value="pizza9">Nawabi Special</div>
+                                <div class="dropdown-item" data-value="pizza10">Born Fire pizza</div>
+                                <div class="dropdown-item" data-value="pizza11">Malai Boti Pizza</div>
+                                <div class="dropdown-item" data-value="pizza12">Chicken Fajita Pizza</div>
+                                <div class="dropdown-item" data-value="pizza13">Chicken Tikka Pizza</div>
+                                <div class="dropdown-item" data-value="pizza14">Afghani Tikka Pizza</div>
+                                <div class="dropdown-item" data-value="pizza15">BBQ Lover Pizza</div>
+                                <div class="dropdown-item" data-value="pizza16">BBQ Lover Pizza</div>
+                                <div class="dropdown-item" data-value="pizza17">Organic Vegi Pizza</div>
+                                <div class="dropdown-item" data-value="pizza18">Kids special Pizza</div>
+                            </div>
+                        </div>
+                        <select name="Pizza" class="original-select">
+                            <option value="none">None</option>
+                            <option value="pizza1">Extreme Pan Peri Peri</option>
+                            <option value="pizza2">Extreme Pan Malai</option>
+                            <option value="pizza3">Extreme Pan Crispy Chicken</option>
+                            <option value="pizza4">Spanish Pizza</option>
+                            <option value="pizza5">Chicken Cheese Stuffed</option>
+                            <option value="pizza6">Chicken Kabab Stuffed</option>
+                            <option value="pizza7">Kababish Stuffed</option>
+                            <option value="pizza8">Crown Crust Pizza</option>
+                            <option value="pizza9">Nawabi Special</option>
+                            <option value="pizza10">Born Fire pizza</option>
+                            <option value="pizza11">Malai Boti Pizza</option>
+                            <option value="pizza12">Chicken Fajita Pizza</option>
+                            <option value="pizza13">Chicken Tikka Pizza</option>
+                            <option value="pizza14">Afghani Tikka Pizza</option>
+                            <option value="pizza15">BBQ Lover Pizza</option>
+                            <option value="pizza16">BBQ Lover Pizza</option>
+                            <option value="pizza17">Organic Vegi Pizza</option>
+                            <option value="pizza18">Kids special Pizza</option>
+                        </select>
+                    </div>
+                    <div class="pizzaSize">
+                        <button type="button" data-size="small" id="small">Small</button>
+                        <button type="button" data-size="medium" id="medium">Medium</button>
+                        <button type="button" data-size="large" id="large">Large</button>
+                    </div>
+                    <div class="selectBurger selectThing">
+                        <label for="Burger">Select your Burger</label>
+                        <div class="custom-dropdown" id="burger-dropdown">
+                            <div class="dropdown-header">None</div>
+                            <div class="dropdown-list" id="burger">
+                                <div class="dropdown-item" data-value="none">None</div>
+                                <div class="dropdown-item" data-value="burger1">Zinger Burger</div>
+                                <div class="dropdown-item" data-value="burger2">Nawabi Special Cheese Burger</div>
+                                <div class="dropdown-item" data-value="burger3">Chicken Patty Burger</div>
+                                <div class="dropdown-item" data-value="burger4">Zinger + Patty Burger</div>
+                                <div class="dropdown-item" data-value="burger5">Chicken Tikka Cheese Burger</div>
+                                <div class="dropdown-item" data-value="burger6">Chicken Grill Burger</div>
+                                <div class="dropdown-item" data-value="burger7">Nawabi Special Grill Burger</div>
+                                <div class="dropdown-item" data-value="burger8">Grill Beef Burger</div>
+                                <div class="dropdown-item" data-value="burger9">Nawabi Special Beef Burger</div>
+                            </div>
+                        </div>
+                        <select name="Burger" class="original-select">
+                            <option value="none">None</option>
+                            <option value="burger1">Zinger Burger</option>
+                            <option value="burger2">Nawabi Special Cheese Burger</option>
+                            <option value="burger3">Chicken Patty Burger</option>
+                            <option value="burger4">Zinger + Patty Burger</option>
+                            <option value="burger5">Chicken Tikka Cheese Burger</option>
+                            <option value="burger6">Chicken Grill Burger</option>
+                            <option value="burger7">Nawabi Special Grill Burger</option>
+                            <option value="burger8">Grill Beef Burger</option>
+                            <option value="burger9">Nawabi Special Beef Burger</option>
+                        </select>
+                    </div>
+                    <div class="selectWings selectThing">
+                        <label for="wings">Select your Wings/Pasta</label>
+                        <div class="custom-dropdown" id="wings-dropdown">
+                            <div class="dropdown-header">None</div>
+                            <div class="dropdown-list" id="wings">
+                                <div class="dropdown-item" data-value="none">None</div>
+                                <div class="dropdown-item" data-value="wings1">Hot Wings (5 Piece)</div>
+                                <div class="dropdown-item" data-value="wings2">Hot Wings (10 Piece)</div>
+                                <div class="dropdown-item" data-value="nuggets1">Nuggets (5 Piece)</div>
+                                <div class="dropdown-item" data-value="nuggets2">Nuggets (10 Piece)</div>
+                                <div class="dropdown-item" data-value="bakedWings">Oven Baked Wings (10 Piece)</div>
+                                <hr>
+                                <div class="dropdown-item" data-value="pasta1">Chicken Creamy Pasta</div>
+                                <div class="dropdown-item" data-value="pasta2">Chicken Cheese Pasta</div>
+                            </div>
+                        </div>
+                        <select name="Wings" class="original-select">
+                            <option value="none">None</option>
+                            <option value="wings1">Hot Wings (5 Piece)</option>
+                            <option value="wings2">Hot Wings (10 Piece)</option>
+                            <option value="nugget1">Nuggets (5 Piece)</option>
+                            <option value="nuggets2">Nuggets (10 Piece)</option>
+                            <option value="bakedWings">Oven Baked Wings (10 Piece)</option>
+                            <option value="pasta1">Chicken Creamy Pasta</option>
+                            <option value="pasta2">Chicken Cheese Pasta</option>
+                        </select>
+                    </div>
+                    <div class="selectRoll selectThing">
+                        <label for="roll">Select your Rolls/Sandwich</label>
+                        <div class="custom-dropdown" id="roll-dropdown">
+                            <div class="dropdown-header">None</div>
+                            <div class="dropdown-list" id="roll">
+                                <div class="dropdown-item" data-value="none">None</div>
+                                <div class="dropdown-item" data-value="roll1">Behari Roll</div>
+                                <div class="dropdown-item" data-value="roll2">BBQ Roll</div>
+                                <div class="dropdown-item" data-value="roll3">Zinger Paratha Roll</div>
+                                <div class="dropdown-item" data-value="roll4">Shawarma Roll</div>
+                                <hr>
+                                <div class="dropdown-item" data-value="sandwich1">Club Sandwich</div>
+                                <div class="dropdown-item" data-value="sandwich2">Peri Peri Panini Sandwich </div>
+                                <div class="dropdown-item" data-value="sandwich3">Malai Panini Sandwich</div>
+                                <div class="dropdown-item" data-value="sandwich4">Tikka Panini Sandwich</div>
+                            </div>
+                        </div>
+                        <select name="ROlls_Sandwich" class="original-select">
+                            <option value="none">None</option>
+                            <option value="roll1">Behari Roll</option>
+                            <option value="roll2">BBQ Roll</option>
+                            <option value="roll3">Zinger Paratha Roll</option>
+                            <option value="roll4">Shawarma Roll</option>
+                            <option value="sandwich1">Club Sandwich</option>
+                            <option value="sandwich2">Peri Peri Panini Sandwich </option>
+                            <option value="sandwich3">Malai Panini Sandwich</option>
+                            <option value="sandwich4">Tikka Panini Sandwich</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formRight">
+                    <div class="selectOther selectThing">
+                        <label for="Other">Select Other Items</label>
+                        <div class="custom-dropdown" id="other-dropdown">
+                            <div class="dropdown-header">None</div>
+                            <div class="dropdown-list" id="other">
+                                <div class="dropdown-item" data-value="none">None</div>
+                                <div class="dropdown-item" data-value="fries1">Single Serving Fries</div>
+                                <div class="dropdown-item" data-value="fries2">Double Serving Fries</div>
+                                <div class="dropdown-item" data-value="fries3">Loaded Fries Small</div>
+                                <div class="dropdown-item" data-value="fries4">Loaded Fries Large</div>
+                                <hr>
+                                <div class="dropdown-item" data-value="sauce1">Peri Peri Sauce</div>
+                                <div class="dropdown-item" data-value="sauce2">Thousand Island Sauce</div>
+                                <hr>
+                                <div class="dropdown-item" data-value="salad1">Russian Salad</div>
+                                <div class="dropdown-item" data-value="salad2">Special Fruit Salad</div>
+                            </div>
+                        </div>
+                        <select name="Other_Items" class="original-select">
+                            <option value="none">None</option>
+                            <option value="fries1">Single Serving Fries</option>
+                            <option value="fries2">Double Serving Fries</option>
+                            <option value="fries3">Loaded Fries Small</option>
+                            <option value="fries4">Loaded Fries Large</option>
+                            <option value="sauce1">Peri Peri Sauce</option>
+                            <option value="sauce2">Thousand Island Sauce</option>
+                            <option value="salad1">Russian Salad</option>
+                            <option value="salad2">Special Fruit Salad</option>
+                        </select>
+                    </div>
+                    <div class="selectSweets selectThing">
+                        <label for="Sweets">Select Ice Cream / Shakes / Tea</label>
+                        <div class="custom-dropdown" id="sweets-dropdown">
+                            <div class="dropdown-header">None</div>
+                            <div class="dropdown-list" id="sweets">
+                                <div class="dropdown-item" data-value="none">None</div>
+                                <div class="dropdown-item" data-value="scoop1">1 Scoop</div>
+                                <div class="dropdown-item" data-value="scoop2">2 Scoop</div>
+                                <div class="dropdown-item" data-value="scoop3">3 Scoop</div>
+                                <hr>
+                                <div class="dropdown-item" data-value="shake1">Ice Cream Shake</div>
+                                <div class="dropdown-item" data-value="shake2">Mint Margarita</div>
+                                <div class="dropdown-item" data-value="shake3">Date Shake</div>
+                                <div class="dropdown-item" data-value="shake4">Banana Shake</div>
+                                <div class="dropdown-item" data-value="shake5">Strawberry Shake</div>
+                                <hr>
+                                <div class="dropdown-item" data-value="tea1">Kashmiri Chye</div>
+                                <div class="dropdown-item" data-value="tea2">Doodh Pati</div>
+                                <div class="dropdown-item" data-value="tea3">Gurr Wali Chye</div>
+                            </div>
+                        </div>
+                        <select name="Ice Creams_Shakes_Tea" class="original-select">
+                            <option value="none">None</option>
+                            <option value="scoop1">1 Scoop</option>
+                            <option value="scoop2">2 Scoop</option>
+                            <option value="scoop3">3 Scoop</option>
+                            <option value="shake1">Ice Cream Shake</option>
+                            <option value="shake2">Mint Margarita</option>
+                            <option value="shake3">Date Shake</option>
+                            <option value="shake4">Banana Shake</option>
+                            <option value="shake5">Strawberry Shake</option>
+                            <option value="tea1">Kashmiri Chye</option>
+                            <option value="tea2">Doodh Pati</option>
+                            <option value="tea3">Gurr Wali Chye</option>
+                        </select>
+                    </div>
+                    <div class="selectBBQ selectThing">
+                        <label for="bbq">Select BBQ</label>
+                        <div class="custom-dropdown" id="bbq-dropdown">
+                            <div class="dropdown-header">None</div>
+                            <div class="dropdown-list" id="bbq">
+                                <div class="dropdown-item" data-value="none">None</div>
+                                <div class="dropdown-item" data-value="bbq1">Chicken Tikka Leg (1 Piece)</div>
+                                <div class="dropdown-item" data-value="bbq2">Chicken Tikka Chest (1 Piece )
+                                </div>
+                                <div class="dropdown-item" data-value="bbq3">Chicken Tikka Boti (Seikh)</div>
+                                <div class="dropdown-item" data-value="bbq4">Chicken Malai Boti (Seikh)</div>
+                                <div class="dropdown-item" data-value="bbq5">Chicken Kabab (1 Piece)</div>
+                                <div class="dropdown-item" data-value="bbq6">Reshmi Kabab (1 Piece)</div>
+                                <div class="dropdown-item" data-value="bbq7">Kastori Boti (Seikh)</div>
+                                <div class="dropdown-item" data-value="bbq8">Pizza Kabab (1 Piece)</div>
+                                <div class="dropdown-item" data-value="bbq9">Grill Fish (1 KG)</div>
+                                <div class="dropdown-item" data-value="bbq10">Beef Kebab (1 Piece)</div>
+                            </div>
+                        </div>
+
+                        <select name="bbq" class="original-select">
+                            <option value="none">None</option>
+                            <option value="bbq1">Chicken Tikka Leg (1 Piece - 300)</option>
+                            <option value="bbq2">Chicken Tikka Chest (1 Piece - 350)</option>
+                            <option value="bbq3">Chicken Tikka Boti (Seikh - 120)</option>
+                            <option value="bbq4">Chicken Malai Boti (Seikh - 170)</option>
+                            <option value="bbq5">Chicken Kabab (1 Piece - 150)</option>
+                            <option value="bbq6">Reshmi Kabab (1 Piece - 170)</option>
+                            <option value="bbq7">Kastori Boti (Seikh - 200)</option>
+                            <option value="bbq8">Pizza Kabab (1 Piece - 350)</option>
+                            <option value="bbq9">Grill Fish (1 KG - 1200)</option>
+                            <option value="bbq10">Beef Kebab (1 Piece - NA)</option>
+                        </select>
+                    </div>
+                    <div class="order-summary">
+                        <h2>Your Order</h2>
+                        <ul id="showPrice">
+                            <li id="dealPrice"></li>
+                            <li id="pizzaPrice"></li>
+                            <li id="burgerPrice"></li>
+                            <li id="wingsPrice"></li>
+                            <li id="rollPrice"></li>
+                            <li id="otherPrice"></li>
+                            <li id="sweetsPrice"></li>
+                            <li id="bbqPrice"></li>
+                        </ul>
+                        <p class="total">Total: <span id="total-price"></span> PKR</p>
+                    </div>
+                    <div class="confirm">
+                        <button type="button" id="confirmBtn">Confirm Order</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    </div>
+
+
+    <footer id="footer">
+        <div class="footer_container">
+            <h2 class="footer_brand"><img src="./logo.png" alt="Nawabi Cafe Logo">Nawabi Cafe - Your Food Specialist
+            </h2>
+            <div class="footer_list">
+                <ul>
+                    <li><a href="./index.html#section1">Home</a></li>
+                    <li><a href="./index.html#section2">Deals</a></li>
+                    <li><a href="./index.html#section4">Pizza</a></li>
+                    <li><a href="./other.html">Others</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://www.facebook.com/share/1GEzrwP65U/"><i class="fa-brands fa-facebook"
+                                style="margin-right: 10px;"></i>Facebook</a>
+                    </li>
+                    <li><a href="https://www.tiktok.com/@nawabe.cafe11?_t=ZS-8yq4VEhgKHv&_r=1"><i
+                                class="fa-brands fa-tiktok" style="margin-right: 10px;"></i>TikTok</a></li>
+                    <li><a href="https://www.instagram.com/nawabi.cafe4?igsh=aHo1bHIyYzNucjFz"><i
+                                class="fa-brands fa-instagram" style="margin-right: 10px;"></i>Instagram</a>
+                    </li>
+                    <li><a href="./other.html#contact"><i class="fa-solid fa-phone"
+                                style="margin-right: 10px;"></i>Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="location">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3466.103378839172!2d72.42512830865405!3d29.68778233528173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393c590062d49d61%3A0x39ef09e5d57cdb0f!2sNawabi%20Cafe!5e0!3m2!1sen!2s!4v1755075885659!5m2!1sen!2s"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+
+    <script src="./order.js"> </script>
+    <script>
+        const orderNow = document.querySelector('#orderNow');
+        orderNow.addEventListener('click', () => {
+            window.location.href = 'order.html';
+        })
+    </script>
+</body>
+
+</html>

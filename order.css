@@ -1,0 +1,241 @@
+ #section6 {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+ }
+
+ .container6 {
+     width: 80%;
+     background: linear-gradient(135deg, #fff5d7, #ffeb99);
+     border-radius: 10px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+     color: #000;
+     padding: 10px;
+     height: 90vh;
+     padding: 10px;
+ }
+
+ .container6 h1 {
+     font-family: "Baloo 2", sans-serif;
+     font-size: 42px;
+     font-weight: 500;
+     color: #b91c1f;
+     text-align: center;
+ }
+
+ .orderForm {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .formLeft,
+ .formRight {
+     width: 40%;
+     margin: 0 50px;
+ }
+
+
+
+ .selectThing {
+     margin: 10px 0;
+     width: 100%;
+ }
+
+ .selectThing label {
+     font-size: 18px;
+     font-weight: 600;
+     color: #b91c1f;
+     margin-bottom: 10px;
+ }
+
+
+ .custom-dropdown {
+     position: relative;
+     width: 100%;
+ }
+
+ .dropdown-header {
+     padding: 15px;
+     border-radius: 12px;
+     border: 2px solid #ffb703;
+     background: linear-gradient(135deg, #fff5d7, #ffeb99);
+     font-size: 16px;
+     font-weight: 500;
+     color: #333;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .dropdown-header:hover {
+     border-color: #d62828;
+     background: linear-gradient(135deg, #ffe8a1, #ffd166);
+     transform: scale(1.02);
+ }
+
+ .dropdown-header:after {
+     content: '';
+     width: 0;
+     height: 0;
+     border-left: 6px solid transparent;
+     border-right: 6px solid transparent;
+     border-top: 8px solid #b91c1f;
+     transition: transform 0.3s ease;
+ }
+
+ .dropdown-header.open:after {
+     transform: rotate(180deg);
+ }
+
+ .dropdown-list {
+     position: absolute;
+     top: 100%;
+     left: 0;
+     width: 100%;
+     background: white;
+     border-radius: 12px;
+     border: 2px solid #ffb703;
+     margin-top: 5px;
+     max-height: 300px;
+     overflow-y: auto;
+     z-index: 1000;
+     display: none;
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+ }
+
+ .dropdown-list.open {
+     display: block;
+ }
+
+ .dropdown-item {
+     padding: 15px;
+     cursor: pointer;
+     transition: background 0.2s ease;
+     border-bottom: 1px solid #f1f1f1;
+ }
+
+ .dropdown-item:last-child {
+     border-bottom: none;
+ }
+
+ .dropdown-item:hover {
+     background: linear-gradient(135deg, #fff5d7, #ffeb99);
+ }
+
+ .dropdown-item.selected {
+     background: linear-gradient(135deg, #ffe8a1, #ffd166);
+     font-weight: 600;
+     color: #b91c1f;
+ }
+
+ .original-select {
+     display: none;
+ }
+
+ .order-summary {
+     margin-top: 20px;
+     padding: 0 8px;
+     border: 2px solid #d62828;
+     border-radius: 12px;
+     background: #fff5d7;
+     max-width: 100%;
+     height: 170px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+ }
+
+ .order-summary h2 {
+     margin-bottom: 10px;
+     font-size: 20px;
+     color: #d62828;
+     margin: 0;
+ }
+
+ .order-summary ul {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     flex-grow: 1;
+     overflow-y: auto;
+ }
+
+ .order-summary li {
+     padding: 5px 0;
+     border-bottom: 1px dashed #ccc;
+ }
+
+ .order-summary .total {
+     font-weight: bold;
+     font-size: 18px;
+     color: green;
+     text-align: end;
+
+ }
+
+ #showPrice li {
+     list-style: none;
+     border: none;
+     padding: 0 15px;
+ }
+
+ .pizzaSize {
+     margin: 12px 0;
+     font-family: "Poppins", sans-serif;
+     width: 100%;
+     text-align: center;
+ }
+
+ .pizzaSize button,
+ .confirm button {
+     display: inline-flex;
+     align-items: center;
+     margin: 0 10px;
+     border: 2px solid #ffb703;
+     border-radius: 12px;
+     background: #fff8e6;
+     cursor: pointer;
+     font-size: 16px;
+     padding: 8px 20px;
+     font-weight: 600;
+     color: #b91c1f;
+     transition: all 0.3s ease;
+     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+ }
+
+ .pizzaSize button:hover,
+ .confirm button:hover {
+     background: #b91c1f;
+     color: #efefef;
+     transform: scale(1.05);
+ }
+
+
+ /* Custom checkbox look */
+ .pizzaSize button::before {
+     content: "🍕";
+     font-size: 18px;
+ }
+
+
+ .confirm {
+     text-align: center;
+     margin: 10px auto;
+ }
+
+ .cross-icon {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .remove-icon {
+     cursor: pointer;
+     color: red;
+ }

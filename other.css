@@ -1,0 +1,223 @@
+        #section5 {
+            margin: 20px auto;
+            width: 100%;
+            color: #efefef;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container5 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 40%;
+            margin: 0 50px;
+        }
+
+        .menu_item {
+            margin: 14px auto;
+            padding: 30px;
+            text-align: center;
+            width: 100%;
+            border-radius: 10px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .burgers {
+            background-image: url(./images/Burgers_bg.jpg);
+        }
+
+        .sandwich {
+            background-image: url(./images/sandwich_bg.jpg);
+        }
+
+        .fries {
+            background-image: url(./images/fries.jpg);
+        }
+
+        .rolls {
+            background-image: url(./images/rolls_bg.jpg);
+        }
+
+        .sauces {
+            background-image: url(./images/sauces_bg.jpg);
+        }
+
+        .pasta {
+            background-image: url(./images/pasta_bg.jpg);
+        }
+
+        .wings {
+            background-image: url(./images/wings_bg.jpg);
+        }
+
+        .menu_item h1 {
+            color: #991b1d;
+            background-color: #ffd700;
+            width: fit-content;
+            padding: 5px 15px;
+            margin: 0 auto;
+            border-radius: 10px;
+            font-family: 'Yeseva One', cursive;
+            letter-spacing: 3px;
+            font-size: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menu_item p {
+            font-size: 25px;
+            font-family: "Baloo 2", sans-serif;
+            font-weight: 500;
+            text-shadow: 2px 6px 8px #000;
+        }
+
+        .container_2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 60%;
+            margin-right: 50px;
+
+        }
+
+        .menu_item2,
+        .tea_items {
+            margin: 10px auto;
+            padding: 30px;
+            text-align: center;
+            width: 100%;
+            border-radius: 10px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .bbq {
+            background-image: url(./images/bbq_bg.jpg);
+        }
+
+        .menu_item2 p span {
+            display: inline-block;
+            padding: 0 10px;
+            border-radius: 10px;
+            font-size: 25px;
+            text-shadow: none;
+            width: 120px;
+            color: #efefef;
+            font-weight: 400;
+        }
+
+        .menu_item2 p span:first-child {
+            background-color: #2f45ff;
+        }
+
+        .menu_item2 p span:last-child {
+            background-color: #3d3d3d;
+            margin-left: 10px;
+        }
+
+        .menu_item2 h1,
+        .tea h1,
+        .form_container h1 {
+            color: #991b1d;
+            background-color: #ffd700;
+            width: fit-content;
+            padding: 5px 15px;
+            margin: 0 auto;
+            border-radius: 10px;
+            font-family: 'Yeseva One', cursive;
+            letter-spacing: 3px;
+            font-size: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menu_item2 p,
+        .tea_items p {
+            font-size: 30px;
+            font-family: "Baloo 2", sans-serif;
+            font-weight: 500;
+            text-shadow: 2px 6px 8px #000;
+        }
+
+        .salad {
+            background-image: url(./images/salad_bg.jpg);
+        }
+
+        .cream_items {
+            width: 100%;
+            background-image: url(./images/cones_bg.jpg);
+        }
+
+        .tea_items {
+            background-image: url(./images/tea_bg.jpg);
+            padding: 20px 100px;
+        }
+
+        .tea_items p {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .form_container {
+            width: 100%;
+            color: #000;
+            margin: 10px auto;
+        }
+
+
+        .contact-form {
+            width: 100%;
+            margin: 10px auto;
+            padding: 20px;
+            background: linear-gradient(90deg, #ffb703, #d62828);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        .submit-btn {
+            background-color: #991b1d;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #7a1618;
+        }
